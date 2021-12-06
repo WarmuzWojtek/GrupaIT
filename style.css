@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: radial-gradient(
+    circle farthest-corner at 32.7% 82.7%,
+    rgba(173, 0, 171, 1) 8.3%,
+    rgba(15, 51, 92, 1) 79.4%
+  );
+}
+
+header {
+  height: 60px;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  background: #0f335c;
+  outline: none;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 1);
+}
+
+h1 {
+  color: #faeac0;
+  text-align: center;
+  margin: 60px 0;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 120px);
+  padding: 48px 12px;
+}
+
+.taskContainer {
+  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  color: #faeac0;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 1);
+  text-align: center;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 16px;
+  transition: 0.3s;
+  background-image: url("./js.png"), url("./bootstrap.png"), url("./sass.png");
+  background-size: 8%;
+  background-position: 5% 8%, 15% 9%, 26% 9%;
+  background-repeat: no-repeat;
+}
+.taskContainer:nth-of-type(1) {
+  background-image: url("./htmlcssjs.png");
+}
+.taskContainer:nth-of-type(3) {
+  background-image: url("./react.png");
+}
+.taskContainer:nth-of-type(4) {
+  background-image: url("./htmlcssjs.png");
+}
+.taskContainer:hover {
+  transform: scale(1.05);
+}
+
+.taskTitle {
+  font-size: 24px;
+  margin: 16px 0;
+  text-align: right;
+  padding-right: 16px;
+}
+
+.taskDescription {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 18px;
+}
+
+.task {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.btn {
+  padding: 12px 24px;
+  cursor: pointer;
+  border: 2px solid #faeac0;
+  border-radius: 8px;
+  display: block;
+  width: 40%;
+  margin: 12px auto;
+  transition: 0.3s;
+  color: #faeac0;
+  text-decoration: none;
+}
+.btn:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 12px 48px;
+  }
+}
+
+@media (min-width: 991px) {
+  .taskContainer {
+    width: 45%;
+  }
+}
