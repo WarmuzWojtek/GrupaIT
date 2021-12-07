@@ -17,17 +17,6 @@
   );
 }
 
-header {
-  height: 60px;
-  padding: 32px;
-  background: rgba(255, 255, 255, 0.2);
-  background: #0f335c;
-  outline: none;
-
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 1);
-}
-
 h1 {
   color: #faeac0;
   text-align: center;
@@ -43,7 +32,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: calc(100vh - 120px);
+  min-height: 100vh;
   padding: 48px 12px;
 }
 
@@ -62,19 +51,20 @@ main {
   width: 100%;
   margin: 16px;
   transition: 0.3s;
-  background-image: url("./js.png"), url("./bootstrap.png"), url("./sass.png");
+  background-image: url("./assets/js.png"), url("./assets/bootstrap.png"),
+    url("./assets/sass.png");
   background-size: 8%;
   background-position: 5% 8%, 15% 9%, 26% 9%;
   background-repeat: no-repeat;
 }
 .taskContainer:nth-of-type(1) {
-  background-image: url("./htmlcssjs.png");
+  background-image: url("./assets/htmlcssjs.png");
 }
 .taskContainer:nth-of-type(3) {
-  background-image: url("./react.png");
+  background-image: url("./assets/react.png");
 }
 .taskContainer:nth-of-type(4) {
-  background-image: url("./htmlcssjs.png");
+  background-image: url("./assets/htmlcssjs.png");
 }
 .taskContainer:hover {
   transform: scale(1.05);
