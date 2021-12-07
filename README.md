@@ -1,4 +1,4 @@
-# GrupaIT - Zadanie rekrutacyjne
+# Grupa.IT - Zadanie rekrutacyjne
 
 Aplikacja agregująca rozwiązania poszczególnych zadań zawierająca odnośniki do repozytoriów oraz wersji live poszczególnych projektów.
 
